@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="getting_first_data.LocationJobTitleActivity"
+    android:layout_margin="30dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="77dp"
+        android:layout_height="21dp"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Your profile helps you discover new opportunities"
+        android:textColor="#393939"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter"
+        android:onClick="trying"
+        android:text="Country*"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter"
+        android:text="City*"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/border_shape_for_tv"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="Countery"
+        android:inputType="textPersonName"
+        android:paddingLeft="7dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#E3E3E3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/border_shape_for_tv"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:paddingLeft="7dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#E3E3E3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The job types you are open to:"
+            android:textColor="#555555"
+            android:textSize="12sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                style="@style/customChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Full Time"
+                android:textColor="@color/chip_text_color"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:checkedIcon="@drawable/ic_baseline_check_chip"
+                app:chipIcon="@drawable/ic_baseline_add_24"
+                app:chipIconVisible="true"
+                app:chipStrokeColor="@color/main_blue"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/customChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part Time"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/chip_text_color"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:checkedIcon="@drawable/ic_baseline_check_chip"
+                app:chipIcon="@drawable/ic_baseline_add_24"
+                app:chipIconVisible="true"
+                app:chipStrokeColor="@color/main_blue"
+                app:chipStrokeWidth="1dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape_main_color"
+        android:fontFamily="@font/inter"
+        android:onClick="continueClicked"
+        android:paddingStart="70dp"
+        android:paddingEnd="70dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+<!--
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip5"
+        style="@style/customChipStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="107dp"
+        android:text="android1"
+        android:textColor="@color/chip_text_color"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:checkedIcon="@drawable/ic_baseline_check_chip"
+        app:chipIcon="@drawable/ic_baseline_add_24"
+        app:chipIconVisible="true"
+        app:chipStrokeColor="@color/main_blue"
+        app:chipStrokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

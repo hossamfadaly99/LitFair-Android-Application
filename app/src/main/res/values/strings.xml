@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="skip">Skip</string>
+    <string name="intro1TitleText">Your Dream Job</string>
+    <string name="intro2TitleText">Follow The Steps</string>
+    <string name="intro3TitleText">Feedback</string>
+    <string name="next">Next</string>
+    <string name="intro1text">Start your career advancement journey with LitFair.</string>
+    <string name="intro2text">Start your career advancement journey with LitFair.</string>
+    <string name="intro3text">Start your career advancement journey with LitFair.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_welcome">Welcome back to LitFair!</string>
+    <string name="login">Log In</string>
+    <string name="sign_up"><u>sign up</u></string>
+    <string name="log_in_underline"><u>log in</u></string>
+
+</resources>

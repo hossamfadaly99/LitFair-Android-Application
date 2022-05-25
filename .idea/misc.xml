@@ -15,8 +15,13 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2595" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_baseline_check_chip.xml" value="0.1555" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.2485" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_call_icon.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_edit_pencil_blue.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1235" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_logo.xml" value="0.1935" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_mail_icon.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/profile_picture_frame.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/progress_bar_shape.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/round_corner_button.xml" value="0.1325" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/round_corner_top.xml" value="0.2595" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/tab_indicator_default.xml" value="0.1755" />
@@ -32,10 +37,10 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_intro1_your_dream_job.xml" value="0.536" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_intro2_follow_the_steps.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_intro3_feedback.xml" value="0.264" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_location_job_title.xml" value="0.21688888888888888" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_location_job_title.xml" value="0.72" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_login.xml" value="0.21688888888888888" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_profile.xml" value="0.5714285714285714" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_profile.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_sign_up.xml" value="0.21981981981981982" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_upload_resume.xml" value="0.5714285714285714" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_uploaded_resum_check.xml" value="0.4" />
@@ -51,7 +56,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.4" />
+        <option name="scale" value="0.536" />
       </ProjectState>
     </option>
   </component>

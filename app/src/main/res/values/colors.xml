@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     
     <!-- intro -->
-    <color name="intro_skip">#555555</color>
+    <color name="text_main_color">#555555</color>
     <color name="blue_intro_title">#5C46F9</color>
     <color name="intro_text">#707070</color>
     <color name="main_blue">#5C46F9</color>

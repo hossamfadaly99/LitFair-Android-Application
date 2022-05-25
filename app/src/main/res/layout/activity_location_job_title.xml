@@ -110,18 +110,17 @@
             android:textSize="12sp"
             />
 
-        <LinearLayout
+        <com.google.android.material.chip.ChipGroup
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
-            android:orientation="horizontal">
+            >
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip1"
                 style="@style/customChipStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
                 android:text="Full Time"
                 android:textColor="@color/chip_text_color"
                 android:theme="@style/Theme.MaterialComponents.Light"
@@ -137,7 +136,48 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Part Time"
-                android:layout_marginRight="10dp"
+                android:textColor="@color/chip_text_color"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:checkedIcon="@drawable/ic_baseline_check_chip"
+                app:chipIcon="@drawable/ic_baseline_add_24"
+                app:chipIconVisible="true"
+                app:chipStrokeColor="@color/main_blue"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/customChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Freelance/Project"
+                android:textColor="@color/chip_text_color"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:checkedIcon="@drawable/ic_baseline_check_chip"
+                app:chipIcon="@drawable/ic_baseline_add_24"
+                app:chipIconVisible="true"
+                app:chipStrokeColor="@color/main_blue"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                style="@style/customChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Freelance/Project"
+                android:textColor="@color/chip_text_color"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:checkedIcon="@drawable/ic_baseline_check_chip"
+                app:chipIcon="@drawable/ic_baseline_add_24"
+                app:chipIconVisible="true"
+                app:chipStrokeColor="@color/main_blue"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                style="@style/customChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work From Home"
                 android:textColor="@color/chip_text_color"
                 android:theme="@style/Theme.MaterialComponents.Light"
                 app:checkedIcon="@drawable/ic_baseline_check_chip"
@@ -147,7 +187,7 @@
                 app:chipStrokeWidth="1dp" />
 
 
-        </LinearLayout>
+        </com.google.android.material.chip.ChipGroup>
     </LinearLayout>
 
     <Button

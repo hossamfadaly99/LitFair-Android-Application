@@ -45,4 +45,9 @@ dependencies {
 
     //circle profile picture
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //recyclerView
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    //cardView
+    implementation "androidx.cardview:cardview:1.0.0"
 }

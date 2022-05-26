@@ -30,9 +30,10 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/font/inter.xml" value="0.533203125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/font/inter_bold.xml" value="0.533203125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/font/inter_medium.xml" value="0.533203125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/font/inter_semiBold.xml" value="0.12697734074390765" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/font/inter_semi_bold.xml" value="0.533203125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/font/inter_semibold.xml" value="0.533203125" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_add_photo.xml" value="0.5714285714285714" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_add_photo.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_intro.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_intro1_your_dream_job.xml" value="0.536" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_intro2_follow_the_steps.xml" value="0.2" />
@@ -40,10 +41,12 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_location_job_title.xml" value="0.72" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_login.xml" value="0.21688888888888888" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_main_application.xml" value="0.4" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_profile.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_sign_up.xml" value="0.21981981981981982" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_upload_resume.xml" value="0.5714285714285714" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_uploaded_resum_check.xml" value="0.4" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/jobs_list_item.xml" value="0.21981981981981982" />
       </map>
     </option>
   </component>
@@ -56,7 +59,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.536" />
+        <option name="scale" value="0.6" />
       </ProjectState>
     </option>
   </component>

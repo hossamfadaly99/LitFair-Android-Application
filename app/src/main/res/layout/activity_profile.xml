@@ -39,6 +39,7 @@
         android:layout_marginRight="30dp"
         android:fontFamily="@font/inter_medium"
         android:isScrollContainer="false"
+        android:onClick="nextClicked"
         android:padding="5dp"
         android:text="Next"
         android:textColor="@color/main_blue"

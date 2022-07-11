@@ -21,6 +21,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
+        android:id="@+id/select_Resume_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/gray_background"
+        android:drawableLeft="@drawable/resume_icon"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:hint="Select your Resume"
+        android:textColor="#393939"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/back_image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="back"
@@ -53,7 +71,7 @@
         android:textColor="#393939"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/back_image_view"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -63,6 +81,7 @@
         android:fontFamily="@font/inter_medium"
         android:padding="5dp"
         android:text="Skip"
+        android:onClick="skip"
         android:textColor="@color/main_blue"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +98,7 @@
         android:text="File Types"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/back_image_view" />
 
     <TextView
         android:id="@+id/textView12"
@@ -96,14 +115,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <Button
-        android:id="@+id/continue_button"
+        android:id="@+id/upload_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_shape_main_color"
         android:fontFamily="@font/inter"
         android:paddingStart="45dp"
         android:paddingEnd="45dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:text="Upload Resume"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -112,6 +131,6 @@
         android:drawableEnd="@drawable/file_upload_black_24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/select_Resume_text_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

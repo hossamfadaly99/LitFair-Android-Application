@@ -1,6 +1,8 @@
 package retrofit;
 
 public class SeekerProfileInfo {
+    public SeekerProfileInfo() {
+    }
 
     private int id;
     private String date_of_birth = null;
@@ -14,8 +16,12 @@ public class SeekerProfileInfo {
     private String title = null;
     private String email;
 
+    public SeekerProfileInfo(String country, String city) {
+        this.country = country;
+        this.city = city;
+    }
 
-    // Getter Methods
+// Getter Methods
 
     public int getId() {
         return id;

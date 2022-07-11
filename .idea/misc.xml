@@ -13,6 +13,7 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/company_btn_clicked_register.xml" value="0.192" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/gray_background.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_baseline_bookmark_border_purple_18.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_baseline_check_chip.xml" value="0.1555" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.2485" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/drawable/ic_call_icon.xml" value="0.18" />
@@ -33,18 +34,20 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/font/inter_semiBold.xml" value="0.12697734074390765" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/font/inter_semi_bold.xml" value="0.533203125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/font/inter_semibold.xml" value="0.533203125" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_add_photo.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_add_photo.xml" value="0.31476997578692495" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_intro.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_intro1_your_dream_job.xml" value="0.536" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_intro2_follow_the_steps.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_intro3_feedback.xml" value="0.264" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_location_job_title.xml" value="0.72" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_job_details.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_location_job_title.xml" value="0.1573321932449765" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_login.xml" value="0.21688888888888888" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_main_application.xml" value="0.4" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_profile.xml" value="0.2" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_sign_up.xml" value="0.21981981981981982" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_upload_resume.xml" value="0.5714285714285714" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_search.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_upload_resume.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/activity_uploaded_resum_check.xml" value="0.4" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Project/app/src/main/res/layout/jobs_list_item.xml" value="0.21981981981981982" />
       </map>
@@ -59,7 +62,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.6" />
+        <option name="scale" value="0.264" />
       </ProjectState>
     </option>
   </component>

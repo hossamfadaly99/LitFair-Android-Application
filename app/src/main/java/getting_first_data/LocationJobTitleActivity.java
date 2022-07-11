@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.project.R;
@@ -20,8 +21,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LocationJobTitleActivity extends AppCompatActivity {
 
+    EditText countryEditText,cityEditText;
+    String h = "Bearer " +
+            "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImlhdCI6MTY1Njc1MTk3MSwicm9sZSI6IlNlZWtlciIsImV4cCI6MTY1NjgzODM3MX0.dX2NwfUnPXZXqKUtk9IYEzayt_pOvGtHrzqPO7n6gKN_HMH8AP9SpJzOkX_24EA23guuE-pKyyV3Zj_6tSY6zh6-LhENBEO87-uvTSndnZpYzn81CYf31Ew7CAJDXqYwznmbBXHiQLGQQjIQsVnt1MUgzf6v4ZctSGbxk6umsAGUsFwH_im-htSrupjugOYXBVaCluMI6pycsi76CYgvgtfN9Akx-cfZ1l2Ojx90XnHKEPnuD_Zi5AuZc4VDX4bmdKpt9nds7mSWUVj6rwNPYl1w96VWkrVRdU98PRVZL6I7tT22UdaveLb_EjGF9oWXFKbkxaPLnj2ocgttjQ1HSxQVx58sP_PGuneLYjbafcUCt-b1hm7ylqcx4iNZ_6CcQS_NPzpVsaZwtmIZGyD-Fc1_85IW_MVE9MLd_vtW4Nr9WwCTfx5Or3Y-cBkTzpuRYXSyOUEko7kPdBFBR4M5oTFzKipoQKJGIWjtcVn6RI7UCJH2Tqz062-5Twd-uIi9RcoWttYkAbavj5g4HVJeJP-0Q7JUwAUEZTD9Z1p88e-Zz9UlHl5Oj7gNQVJ3gBOklQPoQzFHri8Dv2eGILM1K4Tx6I5cb8yPq-CGLP5bnjqezXx_98b1rS1zIS5Zz2HjjKpQSHdhW9mpa6Zv3xbhcmNkDLoafzBMGgjH2TTHeDg";
+
     public void continueClicked(View view){
-        startActivity(new Intent(getApplicationContext(), AddPhotoActivity.class));
+        sendLocationToServer(h);
+
     }
 
     private void sendToServer(String header) {
@@ -56,8 +62,37 @@ public class LocationJobTitleActivity extends AppCompatActivity {
 
     }
 
+    private void sendLocationToServer(String header) {
+        String country = countryEditText.getText().toString();
+        String city = cityEditText.getText().toString();
+        SeekerProfileInfo post = new SeekerProfileInfo(country,city);
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://litfair.herokuapp.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        ApiInterface apiInterface = retrofit.create(ApiInterface.class);
+        //the post
+        Call<SeekerProfileInfo> call = apiInterface.updateLocation(header,post);
+
+        call.enqueue(new Callback<SeekerProfileInfo>() {
+            @Override
+            public void onResponse(Call<SeekerProfileInfo> call, Response<SeekerProfileInfo> response) {
+
+                startActivity(new Intent(getApplicationContext(), AddPhotoActivity.class));
+
+            }
+
+            @Override
+            public void onFailure(Call<SeekerProfileInfo> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.getMessage(),Toast.LENGTH_LONG).show();
+            }
+        });
+
+    }
+
     public void trying(View view){
-        sendToServer("Bearer " + "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzM2LCJpYXQiOjE2NTMxMTUzMDIsInJvbGUiOiJTZWVrZXIiLCJleHAiOjE2NTMyMDE3MDJ9.fPI210OKu-ilQ5qvHEuTqUc41HVwR-4A3d3LvIsb6gM1ajzhccIHS2zOGrxVJz0kyvgTRl_K7Z6qIjgfo6KEK_7syDJafzWEfVSFqoQ9811mt65izeFVVeiSTLHwzoNXo5ApWO7ezLFV31uBpSFVjqyzbFiH_RGmd8cAqw1V1i-tm7OAXsgCnv0Nz52bCVt-CX1j8u5-g-euSnhGqhcDOk9uEMkuf_LLDWQP4rwyETTnAaiBmmIBomrUlMGParLZoxtw3g_UXzrM532X0sts37nq-XehieoBhLkq83ueRND2me8-13EBd47KFBkPobmjjbmnQojqbssXniPRfmkYneA8u4LpFO5z7gpvGOnm7Yv7zLRWKRXZnhNxEharxA-FdoJULr2c3PD_T4hg-Q7gmITDnX0JyYfKr3hEiapxsb6O5r5cCS7FH1q-aKBx93QVoqlt7u2-gBGlgS0xYrrHgH5FUuzkw2w4ENY3Ws9HbVTWqX9EZ4kC9w88Dkv4b9ctpCVBrGtjZJnrL45GJqWxS9ElXGN4zk3mu9LxwWOPd7B8DKLkIG59cVBvxkyqw8I97J_OYcD_TYWyjEpGDsHQGkB0snLFTg7bhE8MiCKAqq-gcEC7l1aQ7xM7b2-7mdd3Ac-n8UwVQzBoLT4nFcxmVTc87ujiyD-1LQCwhNkPpoE");
+        sendToServer(h);
     }
 
     @Override
@@ -65,6 +100,8 @@ public class LocationJobTitleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location_job_title);
 
+        countryEditText = findViewById(R.id.country_edit_text);
+        cityEditText = findViewById(R.id.city_edit_text);
 
 
 

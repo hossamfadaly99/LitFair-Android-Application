@@ -101,7 +101,7 @@
         app:srcCompat="@drawable/ic_baseline_bookmark_border_purple_18" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/details_button"
         android:layout_width="130dp"
         android:layout_height="38dp"
         android:background="@drawable/button_shape_main_color"

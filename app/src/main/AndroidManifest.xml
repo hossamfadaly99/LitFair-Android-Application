@@ -3,6 +3,7 @@
     package="com.example.project">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -13,23 +14,27 @@
         android:theme="@style/Theme.Project"
         android:usesCleartextTraffic="true">
         <activity
+            android:name="jobApply.JobDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name="main_application.SearchActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true"/>
+        <activity
             android:name="main_application.MainApplicationActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true"/>
         <activity
             android:name="getting_first_data.ProfileActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name="getting_first_data.UploadedResumCheckActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="getting_first_data.UploadResumeActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="getting_first_data.AddPhotoActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="getting_first_data.LocationJobTitleActivity"
@@ -43,20 +48,25 @@
         </activity>
         <activity
             android:name="Intro.IntroScreen"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Login"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true"/>
         <activity
             android:name=".SignUp"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true"/>
         <activity
+
             android:name=".SplashScreen"
-            android:theme="@style/SplashScreen" />
+            android:theme="@style/SplashScreen"
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true"/>
 
         <meta-data
             android:name="preloaded_fonts"

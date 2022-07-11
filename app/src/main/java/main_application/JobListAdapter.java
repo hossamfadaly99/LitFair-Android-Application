@@ -3,6 +3,7 @@ package main_application;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -23,6 +24,12 @@ public class JobListAdapter extends RecyclerView.Adapter<JobListAdapter.JobViewH
     @Override
     public void onBindViewHolder(@NonNull JobViewHolder holder, int position) {
         holder.jobTitleTextView.setText(jobTitleList.get(position));
+        holder.detailsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO send position to the new activity/fragment
+            }
+        });
     }
 
     @Override
@@ -37,9 +44,11 @@ public class JobListAdapter extends RecyclerView.Adapter<JobListAdapter.JobViewH
 
     public class JobViewHolder extends RecyclerView.ViewHolder {
         TextView jobTitleTextView;
+        Button detailsButton;
         public JobViewHolder(@NonNull View itemView) {
             super(itemView);
             jobTitleTextView = itemView.findViewById(R.id.job_title);
+            detailsButton = itemView.findViewById(R.id.details_button);
         }
     }
 }

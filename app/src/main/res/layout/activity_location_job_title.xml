@@ -51,18 +51,18 @@
         android:text="City*"
         android:textColor="#555555"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/country_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/country_edit_text" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/country_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2.5dp"
         android:background="@drawable/border_shape_for_tv"
         android:ems="10"
         android:fontFamily="@font/inter"
-        android:hint="Countery"
+        android:hint="Country"
         android:inputType="textPersonName"
         android:paddingLeft="7dp"
         android:paddingTop="10dp"
@@ -74,7 +74,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/city_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2.5dp"
@@ -100,7 +100,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" >
+        app:layout_constraintTop_toBottomOf="@+id/city_edit_text" >
 
         <TextView
             android:layout_width="match_parent"

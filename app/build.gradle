@@ -50,4 +50,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.2.1"
     //cardView
     implementation "androidx.cardview:cardview:1.0.0"
+    //picasso to view the photo
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
 }

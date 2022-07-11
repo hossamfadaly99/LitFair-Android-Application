@@ -25,7 +25,7 @@
     <!-- login layout -->
     <LinearLayout
         android:id="@+id/login_frame_linerLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,6 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="24dp"
             android:text="@string/email"
             android:textColor="#555555"
@@ -77,9 +78,11 @@
 
         <EditText
             android:id="@+id/username"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="3dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/border_shape_for_tv"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
@@ -94,6 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="16dp"
             android:text="@string/password"
             android:textColor="#555555"
@@ -104,16 +108,18 @@
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="3dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/border_shape_for_tv"
+            android:drawableEnd="@drawable/visibility_off_eye"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:padding="15dp"
             android:textColorHint="#E3E3E3"
             android:textSize="15sp"
-            android:drawableEnd="@drawable/visibility_off_eye"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/username" />
@@ -123,6 +129,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
             android:text="Forget Password?"
             android:textColor="@color/main_blue"
             app:layout_constraintEnd_toEndOf="@+id/password"
@@ -177,7 +184,6 @@
                 android:textColor="@color/main_blue"
                 android:textSize="16sp"
                 android:textStyle="bold" />
-
 
 
         </LinearLayout>

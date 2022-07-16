@@ -1,59 +1,73 @@
 package main_application;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.project.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
 public class MainApplicationActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-    RecyclerView recyclerView2;
-    TextView searchTextView;
+    private BottomNavigationView bottomNavigationView;
+    private HomeFragment homeFragment;
+    private AppliedFragment appliedFragment;
+    private SettingFragment settingFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_application);
 
-        searchTextView = findViewById(R.id.search_text_view);
-        searchTextView.setOnClickListener(new View.OnClickListener() {
+        homeFragment = new HomeFragment();
+        appliedFragment = new AppliedFragment();
+        settingFragment = new SettingFragment();
+
+        replace(homeFragment);
+
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SearchActivity.class));
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.home_page:
+                        replace(homeFragment);
+                        break;
+                    case R.id.applied_page:
+                        replace(appliedFragment);
+                        break;
+                    case R.id.setting_page:
+                        replace(settingFragment);
+                        break;
+                }
+                return true;
             }
         });
-
-        recyclerView = findViewById(R.id.recycler);
-        JobListAdapter adapter = new JobListAdapter();
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-
-        ArrayList<String> jobTitleList = new ArrayList<>();
-        jobTitleList.add("Android developer");
-        jobTitleList.add("Front End developer");
-        jobTitleList.add("ML dev");
-        jobTitleList.add("Graphic Designer");
-        jobTitleList.add("Back End developer");
-
-        adapter.setList(jobTitleList);
-
-
-        recyclerView2 = findViewById(R.id.recycler2);
-        JobListAdapter adapter2 = new JobListAdapter();
-        recyclerView2.setAdapter(adapter2);
-        recyclerView2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        adapter2.setList(jobTitleList);
-
-
-
     }
+
+    private void replace(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container_frame, fragment);
+        transaction.commit();
+    }
+
+    public void addFragment(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.add(R.id.container_frame, fragment);
+        transaction.commit();
+    }
+
 }

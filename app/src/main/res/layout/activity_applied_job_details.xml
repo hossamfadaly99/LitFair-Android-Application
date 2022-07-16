@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main_application.AppliedJobDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/cv_scanned_text_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback report 2"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/application_submitted_text_view4"
+            app:layout_constraintTop_toBottomOf="@+id/dotted_line4" />
+
+        <TextView
+            android:id="@+id/application_submitted_text_view4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final HR interview"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/cv_scanned_text_view2"
+            app:layout_constraintTop_toBottomOf="@+id/dotted_line3" />
+
+        <ImageView
+            android:id="@+id/final_hr_interview_check_image_view"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dotted_line3"
+            app:srcCompat="@drawable/tab_indicator_default" />
+
+        <ImageView
+            android:id="@+id/application_submitted_icon_image_view5"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/final_hr_interview_check_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/final_hr_interview_check_image_view"
+            app:layout_constraintStart_toStartOf="@+id/final_hr_interview_check_image_view"
+            app:layout_constraintTop_toTopOf="@+id/final_hr_interview_check_image_view"
+            app:srcCompat="@drawable/ic_baseline_done_24" />
+
+        <ImageView
+            android:id="@+id/feedback_report_check_image_view2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dotted_line4"
+            app:srcCompat="@drawable/tab_indicator_default" />
+
+        <ImageView
+            android:id="@+id/application_submitted_icon_image_view6"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/feedback_report_check_image_view2"
+            app:layout_constraintEnd_toEndOf="@+id/feedback_report_check_image_view2"
+            app:layout_constraintStart_toStartOf="@+id/feedback_report_check_image_view2"
+            app:layout_constraintTop_toTopOf="@+id/feedback_report_check_image_view2"
+            app:srcCompat="@drawable/ic_baseline_done_24" />
+
+        <ImageView
+            android:id="@+id/dotted_line4"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="38dp"
+            android:layerType="software"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/final_hr_interview_check_image_view"
+            app:srcCompat="@drawable/dotted_lined" />
+
+        <TextView
+            android:id="@+id/application_submitted_text_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live interview"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/cv_scanned_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/dotted_line2" />
+
+        <TextView
+            android:id="@+id/cv_scanned_text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback report"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/application_submitted_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/dotted_line" />
+
+
+        <ImageView
+            android:id="@+id/live_interview_check_image_view"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="164dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27"
+            app:srcCompat="@drawable/tab_indicator_default" />
+
+        <ImageView
+            android:id="@+id/feedback_report_check_image_view"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="132dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dotted_line1"
+            app:srcCompat="@drawable/tab_indicator_default" />
+
+        <ImageView
+            android:id="@+id/dotted_line"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="132dp"
+            android:layerType="software"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/application_submitted_check_image_view"
+            app:srcCompat="@drawable/dotted_lined" />
+
+        <ImageView
+            android:id="@+id/dotted_line3"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="132dp"
+            android:layerType="software"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_scanned_check_image_view"
+            app:srcCompat="@drawable/dotted_lined" />
+
+        <ImageView
+            android:id="@+id/back_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:onClick="back"
+            android:padding="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:text="Applied Job Details"
+            android:textColor="#393939"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/back_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/company_image_view"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/light_gray_background"
+            android:padding="5dp"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_image_view" />
+
+        <TextView
+            android:id="@+id/job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Android Developer"
+            android:textColor="#393939"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/company_image_view"
+            app:layout_constraintTop_toTopOf="@+id/company_image_view" />
+
+        <TextView
+            android:id="@+id/job_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="LitFair"
+            android:textColor="#8E8E8E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/company_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/job_title" />
+
+
+        <ImageView
+            android:id="@+id/divider_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginTop="32dp"
+            android:background="#E3E3E3"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/company_image_view" />
+
+
+        <ImageView
+            android:id="@+id/divider_image_view2"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginTop="32dp"
+            android:background="#E3E3E3"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/feedback_report_check_image_view2" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:text="Track Application"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_image_view" />
+
+        <ImageView
+            android:id="@+id/application_submitted_check_image_view"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27"
+            app:srcCompat="@drawable/question_number_indicator_selected" />
+
+        <ImageView
+            android:id="@+id/application_submitted_icon_image_view"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="34dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27"
+            app:srcCompat="@drawable/ic_baseline_done_24" />
+
+        <TextView
+            android:id="@+id/application_submitted_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:text="Application submitted"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/application_submitted_check_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+
+        <ImageView
+            android:id="@+id/dotted_line1"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="38dp"
+            android:layerType="software"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/application_submitted_check_image_view"
+            app:srcCompat="@drawable/dotted_lined" />
+
+
+        <TextView
+            android:id="@+id/cv_scanned_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CV scanned"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/application_submitted_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/dotted_line1" />
+
+        <ImageView
+            android:id="@+id/cv_scanned_check_image_view"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dotted_line1"
+            app:srcCompat="@drawable/tab_indicator_default" />
+
+
+        <ImageView
+            android:id="@+id/application_submitted_icon_image_view2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cv_scanned_check_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/cv_scanned_check_image_view"
+            app:layout_constraintStart_toStartOf="@id/cv_scanned_check_image_view"
+            app:layout_constraintTop_toTopOf="@id/cv_scanned_check_image_view"
+            app:srcCompat="@drawable/ic_baseline_done_24" />
+
+        <ImageView
+            android:id="@+id/dotted_line2"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="38dp"
+            android:layerType="software"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_scanned_check_image_view"
+            app:srcCompat="@drawable/dotted_lined" />
+
+        <ImageView
+            android:id="@+id/application_submitted_icon_image_view3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/live_interview_check_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/live_interview_check_image_view"
+            app:layout_constraintStart_toStartOf="@+id/live_interview_check_image_view"
+            app:layout_constraintTop_toTopOf="@+id/live_interview_check_image_view"
+            app:srcCompat="@drawable/ic_baseline_done_24" />
+
+        <ImageView
+            android:id="@+id/application_submitted_icon_image_view4"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/feedback_report_check_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/feedback_report_check_image_view"
+            app:layout_constraintStart_toStartOf="@+id/feedback_report_check_image_view"
+            app:layout_constraintTop_toTopOf="@+id/feedback_report_check_image_view"
+            app:srcCompat="@drawable/ic_baseline_done_24" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/border_shape_for_tv"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_image_view2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Job Description"
+                android:textColor="#555555"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/job_description_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/inter"
+                android:text="@string/lorem"
+                android:textColor="#8E8E8E" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

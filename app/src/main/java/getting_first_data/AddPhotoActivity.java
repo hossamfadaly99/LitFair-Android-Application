@@ -94,19 +94,17 @@ public class AddPhotoActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == PICK_IMAGE_FROM_GALLERY_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
+        if (requestCode == PICK_IMAGE_FROM_GALLERY_REQUEST && resultCode == RESULT_OK
+                && data != null && data.getData() != null) {
             uri = data.getData();
 
             //send to profile
-
             intent.putExtra("PROFILE_PHOTO_URI",uri);
 
             //preview the image
             pictureFrameLayout.setPadding(0,0,0,0);
             Picasso.get().load(uri).into(circlePictureImageView);
             squarePictureImageView.setVisibility(View.GONE);
-
-
         }
     }
 

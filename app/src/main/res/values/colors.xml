@@ -13,5 +13,8 @@
     <color name="blue_intro_title">#5C46F9</color>
     <color name="intro_text">#707070</color>
     <color name="main_blue">#5C46F9</color>
+
+    <color name="text_gray">#555555</color>
+    <color name="background_gray">#e3e3e3</color>
     
 </resources>

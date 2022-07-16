@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_page"
+        android:enabled="true"
+        android:icon="@drawable/home_nav_icon"
+        android:title="Home"/>
+    <item
+        android:id="@+id/applied_page"
+        android:enabled="true"
+        android:icon="@drawable/applied_nav_icon"
+        android:title="Applied"/>
+    <item
+        android:id="@+id/setting_page"
+        android:enabled="true"
+        android:icon="@drawable/setting_nav_icon"
+        android:title="Setting"/>
+
+</menu>

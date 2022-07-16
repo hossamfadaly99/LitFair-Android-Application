@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main_application.InterviewActivity">
+
+
+    <TextView
+        android:id="@+id/question_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/text_gray"
+        android:text="Question 1: introduce your self"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.camera.view.PreviewView
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/question_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_textView"
+        >
+
+    </androidx.camera.view.PreviewView>
+
+    <Button
+        android:id="@+id/record_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="start recording"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_number"/>
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:id="@+id/question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/record_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preview_view">
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="1"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@drawable/question_number_indicator_selected"
+            />
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="2"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_gray"
+            android:background="@drawable/question_number_indicator_default"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/question_number_indicator_default"
+            />
+
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="3"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_gray"
+            android:background="@drawable/question_number_indicator_default"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="4"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_gray"
+            android:background="@drawable/question_number_indicator_default"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="5"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_gray"
+            android:background="@drawable/question_number_indicator_default"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

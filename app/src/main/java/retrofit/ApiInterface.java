@@ -1,5 +1,7 @@
 package retrofit;
 
+import data.CurrentData;
+import data.JobsData;
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -9,6 +11,7 @@ import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Part;
+import retrofit2.http.Query;
 
 public interface ApiInterface {
     @POST("addUser")
@@ -38,4 +41,25 @@ public interface ApiInterface {
             @Header("Authorization") String Header,
             @Part MultipartBody.Part cv
     );
+
+    @Multipart
+    @POST("upload-video")
+    Call<UploadVideo> uploadVideo(
+            @Header("Authorization") String Header,
+            @Part MultipartBody.Part video
+    );
+
+    @GET("jobs")
+    Call<JobsData> getAllJobs(
+            @Header("Authorization") String Header
+    );
+
+    @GET("jobs/")
+    Call<String> getSpecificJob(
+            @Query("id") String id
+    );
+
+
+
+
 }   

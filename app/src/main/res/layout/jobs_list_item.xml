@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
     android:elevation="20dp"
+    android:id="@+id/job_card"
     app:cardCornerRadius="5dp"
     android:layout_marginLeft="8dp"
     android:layout_marginTop="5dp"
@@ -16,7 +17,9 @@
         android:layout_height="50dp"
         android:layout_marginLeft="9dp"
         android:layout_marginTop="17dp"
-        android:src="@drawable/ic_call_icon"
+        android:src="@drawable/logo"
+        android:background="@drawable/light_gray_background"
+        android:padding="5dp"
         />
 
     <TextView
@@ -55,30 +58,30 @@
         android:textColor="#717171"
         />
     <TextView
-        android:id="@+id/company_design_textview"
+        android:id="@+id/experience_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Google"
+        android:text="Fresh graduate"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="115dp"
-        android:drawableLeft="@drawable/ic_business_black_24dp"
+        android:drawableLeft="@drawable/ic_baseline_experience_24"
         android:drawablePadding="8dp"
         android:textColor="#717171"
         />
     <TextView
-        android:id="@+id/company_schedule_textview"
+        android:id="@+id/company_verified_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2 days ago"
+        android:text="Verified"
         android:layout_marginLeft="176dp"
         android:layout_marginTop="115dp"
-        android:drawableLeft="@drawable/ic_schedule_black_24dp"
+        android:drawableLeft="@drawable/ic_baseline_verified_24"
         android:drawablePadding="8dp"
         android:textColor="#717171"
         />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/job_type_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="205dp"
@@ -93,7 +96,7 @@
         android:textSize="10sp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/save_image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="266dp"
@@ -105,7 +108,8 @@
         android:layout_width="130dp"
         android:layout_height="38dp"
         android:background="@drawable/button_shape_main_color"
-        android:text="Details"
+        android:text="  Details"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
         android:layout_marginLeft="155dp"
         android:layout_marginTop="145dp"
         android:textAllCaps="false"

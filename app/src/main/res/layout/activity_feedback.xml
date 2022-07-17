@@ -6,4 +6,735 @@
     android:layout_height="match_parent"
     tools:context="main_application.FeedbackActivity">
 
+
+    <ImageView
+        android:id="@+id/back_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:isScrollContainer="false"
+        android:onClick="back"
+        android:padding="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="24.4dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/cyan_circle"
+        app:layout_constraintStart_toEndOf="@+id/back_image_view"
+        app:layout_constraintTop_toTopOf="@+id/back_image_view" />
+
+    <TextView
+        android:id="@+id/description_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Feedback Live Interview"
+        android:textColor="#5C46F9"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/back_image_view"
+        app:layout_constraintTop_toTopOf="@+id/back_image_view" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Get your instant Feedback"
+        android:textColor="#8E8E8E"
+        app:layout_constraintStart_toStartOf="@+id/back_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/back_image_view" />
+
+    <ImageView
+        android:id="@+id/divider_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="#E3E3E3"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Recommend Hiring"
+        android:textColor="#555555"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/divider_image_view" />
+
+    <RatingBar
+        android:id="@+id/recommend_hiring_progressBar"
+        style="@style/CustomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:numStars="10"
+        android:progress="16"
+        android:progressDrawable="@drawable/custom_ratingbar"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:stepSize="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/recommend_hiring_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter"
+        android:text="2/10"
+        android:textColor="#555555"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommend_hiring_progressBar" />
+
+    <ImageView
+        android:id="@+id/divider_image_view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E3E3E3"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommend_hiring_textview" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Sound &amp; Text"
+        android:textColor="#555555"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/divider_image_view2" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/nofillers_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/structured_answers_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/nofillers_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nofillers_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/nofillers_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/nofillers_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/nofillers_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Nofillers"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/nofillers_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/nofillers_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/nofillers_progressBar" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/structured_answers_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/paused_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/nofillers_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/structured_answers_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/structured_answers_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/structured_answers_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/structured_answers_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/structured_answers_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Structured\nAnswers"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/structured_answers_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/structured_answers_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/structured_answers_progressBar" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/paused_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/speaking_rate_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/structured_answers_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/paused_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/paused_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/paused_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/paused_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/paused_progressBar" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Paused"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/paused_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/paused_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/paused_progressBar" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/speaking_rate_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/paused_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/speaking_rate_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/speaking_rate_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/speaking_rate_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/speaking_rate_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/speaking_rate_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Speaking Rate"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/speaking_rate_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/speaking_rate_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/speaking_rate_progressBar" />
+
+    <!--    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa      -->
+
+    <ImageView
+        android:id="@+id/divider_image_view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="188dp"
+        android:background="#E3E3E3"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommend_hiring_textview" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Emotion"
+        android:textColor="#555555"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/divider_image_view3" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/friendly_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/calm_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/friendly_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/friendly_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/friendly_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/friendly_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/friendly_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Friendly"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/friendly_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/friendly_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/friendly_progressBar" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/calm_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/not_stressed_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/friendly_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/friendly_progressBar"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/calm_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/calm_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/calm_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/calm_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/calm_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Calm"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/calm_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/calm_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/calm_progressBar" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/not_stressed_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/not_awkward_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calm_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/friendly_progressBar"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/not_stressed_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/not_stressed_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/not_stressed_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/not_stressed_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/not_stressed_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Not Stressed"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/not_stressed_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/not_stressed_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/not_stressed_progressBar" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/not_awkward_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/not_stressed_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/friendly_progressBar"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/not_awkward_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/not_awkward_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/not_awkward_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/not_awkward_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/not_awkward_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Not Awkward"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/not_awkward_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/not_awkward_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/not_awkward_progressBar" />
+
+    <!-- aaaaaaaaaa -->
+
+    <ImageView
+        android:id="@+id/divider_image_view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="372dp"
+        android:background="#E3E3E3"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommend_hiring_textview" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Impression"
+        android:textColor="#555555"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/divider_image_view4" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/engaged_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/focused_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/engaged_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/engaged_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/engaged_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/engaged_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/engaged_progressBar" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Engaged"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/engaged_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/engaged_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/engaged_progressBar" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/focused_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/authentic_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/engaged_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/engaged_progressBar"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/focused_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/focused_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/focused_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/focused_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/focused_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Focuced"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/focused_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/focused_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/focused_progressBar" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/authentic_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/focused_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/engaged_progressBar"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/authentic_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/authentic_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/authentic_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/authentic_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/authentic_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Authentic"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/authentic_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/authentic_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/authentic_progressBar" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/excited_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/smiled_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/excited_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/excited_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/excited_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/excited_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/excited_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Excited"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/excited_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/excited_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/excited_progressBar" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/smiled_progressBar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:indicatorColor="#68E1FF"
+        app:indicatorSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/excited_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/textView41"
+        app:trackColor="#E3E3E3"
+        app:trackThickness="3dp" />
+
+    <TextView
+        android:id="@+id/smiled_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textColor="#5C46F9"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/smiled_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/smiled_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/smiled_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/smiled_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Smiled"
+        android:textColor="#555555"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/smiled_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/smiled_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/smiled_progressBar" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

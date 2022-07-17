@@ -18,7 +18,14 @@
         android:usesCleartextTraffic="true" >
         <activity
             android:name="main_application.FeedbackActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="main_application.JobDetailsActivity"
             android:exported="true"
@@ -38,13 +45,7 @@
         <activity
             android:name="main_application.MainApplicationActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="getting_first_data.ProfileActivity"
             android:exported="true"

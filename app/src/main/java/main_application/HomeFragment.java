@@ -102,7 +102,7 @@ public class HomeFragment extends Fragment {
         recentProgressBar.setVisibility(View.VISIBLE);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://litfair.herokuapp.com/")
+                .baseUrl("http://40.83.32.70")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
